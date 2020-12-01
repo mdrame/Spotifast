@@ -10,6 +10,7 @@
 		778634BD2576AA8200BC1071 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778634BC2576AA8200BC1071 /* Constants.swift */; };
 		778634CE2576BD5900BC1071 /* FavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778634CD2576BD5900BC1071 /* FavViewController.swift */; };
 		778634D32576BDA400BC1071 /* LogOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778634D22576BDA400BC1071 /* LogOutViewController.swift */; };
+		778634DC2576C58F00BC1071 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778634DB2576C58F00BC1071 /* HomeTableViewCell.swift */; };
 		778AD261255E149800ED1DB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778AD260255E149800ED1DB5 /* AppDelegate.swift */; };
 		778AD263255E149800ED1DB5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778AD262255E149800ED1DB5 /* SceneDelegate.swift */; };
 		778AD265255E149800ED1DB5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778AD264255E149800ED1DB5 /* ViewController.swift */; };
@@ -42,6 +43,7 @@
 		778634BC2576AA8200BC1071 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		778634CD2576BD5900BC1071 /* FavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavViewController.swift; sourceTree = "<group>"; };
 		778634D22576BDA400BC1071 /* LogOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutViewController.swift; sourceTree = "<group>"; };
+		778634DB2576C58F00BC1071 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		778AD25D255E149800ED1DB5 /* Spotifast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spotifast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		778AD260255E149800ED1DB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		778AD262255E149800ED1DB5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				778AD266255E149800ED1DB5 /* Main.storyboard */,
+				778634DA2576C56900BC1071 /* CustomView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -108,6 +111,14 @@
 				778634D22576BDA400BC1071 /* LogOutViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		778634DA2576C56900BC1071 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				778634DB2576C58F00BC1071 /* HomeTableViewCell.swift */,
+			);
+			path = CustomView;
 			sourceTree = "<group>";
 		};
 		778AD254255E149800ED1DB5 = {
@@ -300,6 +311,7 @@
 				778AD261255E149800ED1DB5 /* AppDelegate.swift in Sources */,
 				778AD263255E149800ED1DB5 /* SceneDelegate.swift in Sources */,
 				778AD26B255E149800ED1DB5 /* Spotifast.xcdatamodeld in Sources */,
+				778634DC2576C58F00BC1071 /* HomeTableViewCell.swift in Sources */,
 				778634D32576BDA400BC1071 /* LogOutViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

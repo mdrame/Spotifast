@@ -11,9 +11,8 @@ import AuthenticationServices
 // todo
 /// Log in and out
 
-class ViewController: UIViewController, ASWebAuthenticationPresentationContextProviding {
-    
-    // Protocol
+class ViewController: UIViewController, ASWebAuthenticationPresentationContextProviding,  UITableViewDelegate, UITableViewDataSource {
+  
     func presentationAnchor(for session: ASWebAuthenticationSession) -> ASPresentationAnchor {
         return self.view.window ?? ASPresentationAnchor()
     }
@@ -23,6 +22,7 @@ class ViewController: UIViewController, ASWebAuthenticationPresentationContextPr
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         navigationControllerStuff(title: "New Release")
+        homeTableViewConstrain()
         let url = URL(string: "https://accounts.spotify.com/authorize?client_id=\(Constants.clientID)&response_typecode&redirect_url=\(Constants.redirectURI)")!
         let scheme = "auth"
         let session = ASWebAuthenticationSession(url: url, callbackURLScheme: scheme)
@@ -110,8 +110,44 @@ class ViewController: UIViewController, ASWebAuthenticationPresentationContextPr
     }
     
     
+    // UIKit Stuff
+    
+    lazy var homeTableView: UITableView = {
+        let homeTableView = UITableView(frame: .zero)
+        homeTableView.translatesAutoresizingMaskIntoConstraints = false
+        homeTableView.register(HomeTableViewCell.self, forCellReuseIdentifier: HomeTableViewCell.cellIdentifier)
+        homeTableView.rowHeight = 100
+        return homeTableView
+    }()
+    
+    func homeTableViewConstrain() {
+        homeTableView.delegate = self
+        homeTableView.dataSource = self
+        view.addSubview(homeTableView)
+        NSLayoutConstraint.activate([
+            homeTableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            homeTableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            homeTableView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            homeTableView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
+        ])
+        
+    }
+    
+    // Tableview delegeate and datasourse
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: HomeTableViewCell.cellIdentifier, for: indexPath) as! HomeTableViewCell
+//        configureCell(cell: cell, for: indexPath
+        return cell
+    }
+    
+    
     
 }
+
 
 
 
