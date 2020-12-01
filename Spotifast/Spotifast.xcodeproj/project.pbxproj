@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		778634BD2576AA8200BC1071 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778634BC2576AA8200BC1071 /* Constants.swift */; };
 		778AD261255E149800ED1DB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778AD260255E149800ED1DB5 /* AppDelegate.swift */; };
 		778AD263255E149800ED1DB5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778AD262255E149800ED1DB5 /* SceneDelegate.swift */; };
 		778AD265255E149800ED1DB5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778AD264255E149800ED1DB5 /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		778634BC2576AA8200BC1071 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		778AD25D255E149800ED1DB5 /* Spotifast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spotifast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		778AD260255E149800ED1DB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		778AD262255E149800ED1DB5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				778AD260255E149800ED1DB5 /* AppDelegate.swift */,
 				778AD262255E149800ED1DB5 /* SceneDelegate.swift */,
 				778AD264255E149800ED1DB5 /* ViewController.swift */,
+				778634BC2576AA8200BC1071 /* Constants.swift */,
 				778AD266255E149800ED1DB5 /* Main.storyboard */,
 				778AD26C255E149B00ED1DB5 /* Assets.xcassets */,
 				778AD26E255E149B00ED1DB5 /* LaunchScreen.storyboard */,
@@ -261,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				778634BD2576AA8200BC1071 /* Constants.swift in Sources */,
 				778AD265255E149800ED1DB5 /* ViewController.swift in Sources */,
 				778AD261255E149800ED1DB5 /* AppDelegate.swift in Sources */,
 				778AD263255E149800ED1DB5 /* SceneDelegate.swift in Sources */,
