@@ -22,10 +22,10 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string>com.amgm.Uncover</string>
+			<string>com.modrame.herokuapp.Spotifast</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>Spofifast</string>
+				<string>Spotifast</string>
 			</array>
 		</dict>
 	</array>
