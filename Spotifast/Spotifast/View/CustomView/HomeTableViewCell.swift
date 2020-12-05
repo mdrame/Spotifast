@@ -26,6 +26,7 @@ class HomeTableViewCell: UITableViewCell {
         newReleaseImages.image = UIImage(named: "clock.png")
         newReleaseImages.backgroundColor = #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)
         newReleaseImages.translatesAutoresizingMaskIntoConstraints = false
+        newReleaseImages.layer.cornerRadius = 10
         return newReleaseImages
     }()
     
