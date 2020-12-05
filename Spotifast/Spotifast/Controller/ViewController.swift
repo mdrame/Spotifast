@@ -141,7 +141,13 @@ class ViewController: UIViewController, ASWebAuthenticationPresentationContextPr
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: HomeTableViewCell.cellIdentifier, for: indexPath) as! HomeTableViewCell
 //        configureCell(cell: cell, for: indexPath
+        cell.accessoryType = .disclosureIndicator
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = AlbumViewController()
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     
