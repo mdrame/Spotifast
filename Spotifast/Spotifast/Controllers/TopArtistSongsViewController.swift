@@ -83,7 +83,7 @@ extension TopArtistSongsViewController: UITableViewDelegate, UITableViewDataSour
         
         let song = vibezSoundz[indexPath.row]
         cell.setSong(song: song, starButtonHidden: true)
-        cell.vibezRecord = song
+        cell.records = song
         
         return cell
     }

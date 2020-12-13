@@ -14,7 +14,7 @@ class ArtistTableCell: UITableViewCell {
     let artistImage = UIImageView()
     let artistLabel = UILabel()
     let songLabel = UILabel()
-    var vibezRecord: SpotifastSound!
+    var records: SpotifastSound!
     
     let playButtonImage: UIImageView = {
         let image = UIImageView()
@@ -69,7 +69,7 @@ class ArtistTableCell: UITableViewCell {
     @objc func favoriteSelected(){
         guard var favoriteSongsID = UserDefaults.standard.stringArray(forKey: "favoriteSongs") else {
             var favoriteSongsID = [String]()
-            favoriteSongsID.append(vibezRecord.id)
+            favoriteSongsID.append(records.id)
             UserDefaults.standard.set(favoriteSongsID, forKey: "favoriteSongs")
             let star = UIImage(systemName: "star.fill")
             let blueStar = star?.withTintColor(UIColor(.blue), renderingMode: .alwaysOriginal)
@@ -77,13 +77,13 @@ class ArtistTableCell: UITableViewCell {
             return
         }
         
-        if !favoriteSongsID.contains(vibezRecord.id) {
+        if !favoriteSongsID.contains(records.id) {
             let star = UIImage(systemName: "star.fill")
             let blueStar = star?.withTintColor(UIColor(.blue), renderingMode: .alwaysOriginal)
             favoriteButton.setImage(blueStar, for: .normal)
-            favoriteSongsID.append(vibezRecord.id)
+            favoriteSongsID.append(records.id)
         } else {
-            favoriteSongsID = favoriteSongsID.filter(){$0 != vibezRecord.id}
+            favoriteSongsID = favoriteSongsID.filter(){$0 != records.id}
             let star = UIImage(systemName: "star")
             let blueStar = star?.withTintColor(UIColor(.blue), renderingMode: .alwaysOriginal)
             favoriteButton.setImage(blueStar, for: .normal)
@@ -97,10 +97,10 @@ class ArtistTableCell: UITableViewCell {
         var currentPlayingId = UserDefaults.standard.string(forKey: "current_playing_id")
         
         guard let player = VibezPlayer.shared.player else {
-            if let previewURL = vibezRecord.previewUrl {
+            if let previewURL = records.previewUrl {
                 VibezPlayer.shared.downloadFileFromURL(url: previewURL)
             }
-            currentPlayingId = vibezRecord.id
+            currentPlayingId = records.id
             UserDefaults.standard.set(currentPlayingId, forKey: "current_playing_id")
             
             DispatchQueue.main.async {
@@ -111,24 +111,24 @@ class ArtistTableCell: UITableViewCell {
             return
         }
         
-        if currentPlayingId == vibezRecord.id && player.isPlaying{
+        if currentPlayingId == records.id && player.isPlaying{
             player.pause()
             
             let play = UIImage(systemName: "play.fill")
             let playSelected = play?.withTintColor(UIColor(.blue), renderingMode: .alwaysOriginal)
             playButtonImage.image = playSelected
             
-        }else if currentPlayingId == vibezRecord.id && !player.isPlaying {
+        }else if currentPlayingId == records.id && !player.isPlaying {
             player.play()
             let play = UIImage(systemName: "pause.fill")
             let playSelected = play?.withTintColor(UIColor(.blue), renderingMode: .alwaysOriginal)
             playButtonImage.image = playSelected
             
         }else {
-            if let previewURL = vibezRecord.previewUrl {
+            if let previewURL = records.previewUrl {
                 VibezPlayer.shared.downloadFileFromURL(url: previewURL)
             }
-            currentPlayingId = vibezRecord.id
+            currentPlayingId = records.id
             UserDefaults.standard.set(currentPlayingId, forKey: "current_playing_id")
             
             DispatchQueue.main.async {

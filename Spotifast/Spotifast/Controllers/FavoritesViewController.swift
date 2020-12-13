@@ -92,7 +92,7 @@ extension FavoritesViewController: UITableViewDelegate, UITableViewDataSource {
         
 //        let artist = artists[indexPath.row]
 //        cell.setArtist(artist: artist)
-        cell.vibezRecord = vibezSoundz[indexPath.row]
+        cell.records = vibezSoundz[indexPath.row]
         cell.setSong(song: vibezSoundz[indexPath.row], starButtonHidden: false)
         
         return cell
