@@ -6,9 +6,9 @@
 import Foundation
 import AVFoundation
 
-class VibezPlayer {
+class SpotifastPlayer {
     
-    static let shared = VibezPlayer()
+    static let shared = SpotifastPlayer()
     var player: AVAudioPlayer!
     
     func downloadFileFromURL(url: URL){

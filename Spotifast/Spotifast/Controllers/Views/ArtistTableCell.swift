@@ -96,9 +96,9 @@ class ArtistTableCell: UITableViewCell {
     @objc func hiddenPlayButtonTapped(){
         var currentPlayingId = UserDefaults.standard.string(forKey: "current_playing_id")
         
-        guard let player = VibezPlayer.shared.player else {
+        guard let player = SpotifastPlayer.shared.player else {
             if let previewURL = records.previewUrl {
-                VibezPlayer.shared.downloadFileFromURL(url: previewURL)
+                SpotifastPlayer.shared.downloadFileFromURL(url: previewURL)
             }
             currentPlayingId = records.id
             UserDefaults.standard.set(currentPlayingId, forKey: "current_playing_id")
@@ -126,7 +126,7 @@ class ArtistTableCell: UITableViewCell {
             
         }else {
             if let previewURL = records.previewUrl {
-                VibezPlayer.shared.downloadFileFromURL(url: previewURL)
+                SpotifastPlayer.shared.downloadFileFromURL(url: previewURL)
             }
             currentPlayingId = records.id
             UserDefaults.standard.set(currentPlayingId, forKey: "current_playing_id")
@@ -259,7 +259,7 @@ class ArtistTableCell: UITableViewCell {
         let currentPlayingId = UserDefaults.standard.string(forKey: "current_playing_id")
         
         // update appropriate play/pause icon
-        if let player = VibezPlayer.shared.player {
+        if let player = SpotifastPlayer.shared.player {
             if player.isPlaying {
                 if currentPlayingId == song.id {
                     let play = UIImage(systemName: "pause.fill")
