@@ -1,8 +1,8 @@
 //
-//  SpotifastTests.swift
-//  SpotifastTests
+//  VibezTests.swift
+//  VibezTests
 //
-//  Created by Mohammed Drame on 11/12/20.
+//  Created by Benjamin Simpson on 11/12/20.
 //
 
 import XCTest

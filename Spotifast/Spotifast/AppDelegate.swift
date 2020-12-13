@@ -1,9 +1,7 @@
 //
 //  AppDelegate.swift
 //  Spotifast
-//
-//  Created by Mohammed Drame on 11/12/20.
-//
+//  Created by Mohammed Drame on 12/12/20.
 
 import UIKit
 import CoreData
@@ -34,14 +32,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     // MARK: - Core Data stack
 
-    lazy var persistentContainer: NSPersistentCloudKitContainer = {
+    lazy var persistentContainer: NSPersistentContainer = {
         /*
          The persistent container for the application. This implementation
          creates and returns a container, having loaded the store for the
          application to it. This property is optional since there are legitimate
          error conditions that could cause the creation of the store to fail.
         */
-        let container = NSPersistentCloudKitContainer(name: "Spotifast")
+        let container = NSPersistentContainer(name: "Vibez")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 // Replace this implementation with code to handle the error appropriately.

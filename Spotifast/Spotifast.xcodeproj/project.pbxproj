@@ -3,88 +3,106 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		778634BD2576AA8200BC1071 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778634BC2576AA8200BC1071 /* Constants.swift */; };
-		778634CE2576BD5900BC1071 /* FavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778634CD2576BD5900BC1071 /* FavViewController.swift */; };
-		778634D32576BDA400BC1071 /* LogOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778634D22576BDA400BC1071 /* LogOutViewController.swift */; };
-		778634DC2576C58F00BC1071 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778634DB2576C58F00BC1071 /* HomeTableViewCell.swift */; };
-		778634E725770D7500BC1071 /* clock.png in Resources */ = {isa = PBXBuildFile; fileRef = 778634E625770D7500BC1071 /* clock.png */; };
-		77863513257C2F6000BC1071 /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77863512257C2F6000BC1071 /* AlbumViewController.swift */; };
-		77863518257C30F300BC1071 /* AlbumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77863517257C30F300BC1071 /* AlbumTableViewCell.swift */; };
-		7786351D257C4AED00BC1071 /* FavoriteViewControllerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7786351C257C4AED00BC1071 /* FavoriteViewControllerTableViewCell.swift */; };
-		778AD261255E149800ED1DB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778AD260255E149800ED1DB5 /* AppDelegate.swift */; };
-		778AD263255E149800ED1DB5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778AD262255E149800ED1DB5 /* SceneDelegate.swift */; };
-		778AD265255E149800ED1DB5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778AD264255E149800ED1DB5 /* ViewController.swift */; };
-		778AD268255E149800ED1DB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 778AD266255E149800ED1DB5 /* Main.storyboard */; };
-		778AD26B255E149800ED1DB5 /* Spotifast.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 778AD269255E149800ED1DB5 /* Spotifast.xcdatamodeld */; };
-		778AD26D255E149B00ED1DB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 778AD26C255E149B00ED1DB5 /* Assets.xcassets */; };
-		778AD270255E149B00ED1DB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 778AD26E255E149B00ED1DB5 /* LaunchScreen.storyboard */; };
-		778AD27B255E149C00ED1DB5 /* SpotifastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778AD27A255E149C00ED1DB5 /* SpotifastTests.swift */; };
-		778AD286255E149C00ED1DB5 /* SpotifastUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778AD285255E149C00ED1DB5 /* SpotifastUITests.swift */; };
+		1B194727258051DF003CE4C0 /* NetworkRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B194726258051DF003CE4C0 /* NetworkRequests.swift */; };
+		1B19473D2580A41A003CE4C0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B19473C2580A41A003CE4C0 /* HomeViewController.swift */; };
+		1B1947542580C71C003CE4C0 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1947532580C71C003CE4C0 /* FavoritesViewController.swift */; };
+		1B194759258186CF003CE4C0 /* ArtistTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B194758258186CE003CE4C0 /* ArtistTableCell.swift */; };
+		1B19476F2581D789003CE4C0 /* TopArtistSongsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B19476E2581D789003CE4C0 /* TopArtistSongsViewController.swift */; };
+		1B194787258254DA003CE4C0 /* FavoriteArtistsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B194786258254DA003CE4C0 /* FavoriteArtistsViewController.swift */; };
+		1B2230E3255E11BF00AB7B3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2230E2255E11BF00AB7B3E /* AppDelegate.swift */; };
+		1B2230E5255E11BF00AB7B3E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2230E4255E11BF00AB7B3E /* SceneDelegate.swift */; };
+		1B2230EA255E11C000AB7B3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B2230E8255E11C000AB7B3E /* Main.storyboard */; };
+		1B2230ED255E11C000AB7B3E /* Vibez.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1B2230EB255E11C000AB7B3E /* Vibez.xcdatamodeld */; };
+		1B2230EF255E11C300AB7B3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B2230EE255E11C300AB7B3E /* Assets.xcassets */; };
+		1B2230F2255E11C300AB7B3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B2230F0255E11C300AB7B3E /* LaunchScreen.storyboard */; };
+		1B2230FD255E11C400AB7B3E /* SpotifastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2230FC255E11C400AB7B3E /* SpotifastTests.swift */; };
+		1B223108255E11C400AB7B3E /* SpotifastUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B223107255E11C400AB7B3E /* SpotifastUITests.swift */; };
+		1B9DDC31257AFD1600D8A948 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9DDC30257AFD1500D8A948 /* Constants.swift */; };
+		1B9DDC3C257B00EB00D8A948 /* SpotifyK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9DDC3B257B00EB00D8A948 /* SpotifyK.swift */; };
+		1B9DDC45257B095400D8A948 /* SpotifastSound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9DDC44257B095400D8A948 /* SpotifastSound.swift */; };
+		1B9DDC52257B10A100D8A948 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 1B9DDC51257B10A100D8A948 /* Kingfisher */; };
+		1B9DDC57257C6AF600D8A948 /* JSONModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9DDC56257C6AF500D8A948 /* JSONModel.swift */; };
+		1B9DDC5C257C6C3E00D8A948 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9DDC5B257C6C3E00D8A948 /* DataModel.swift */; };
+		1B9DDC99257C73F600D8A948 /* VibezPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9DDC98257C73F600D8A948 /* VibezPlayer.swift */; };
+		1B9DDCAB257C874300D8A948 /* SpotifyCaseTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9DDCAA257C874300D8A948 /* SpotifyCaseTypes.swift */; };
+		1B9DDCB0257CB44900D8A948 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9DDCAF257CB44800D8A948 /* LoginViewController.swift */; };
+		1B9DDCB6257CD30000D8A948 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9DDCB5257CD30000D8A948 /* TabBarController.swift */; };
+		1B9DDCF1257DF0F700D8A948 /* Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9DDCF0257DF0F700D8A948 /* Parameters.swift */; };
+		773E6D662585A43C001F9093 /* spotifast.png in Resources */ = {isa = PBXBuildFile; fileRef = 773E6D652585A43C001F9093 /* spotifast.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		778AD277255E149C00ED1DB5 /* PBXContainerItemProxy */ = {
+		1B2230F9255E11C400AB7B3E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 778AD255255E149800ED1DB5 /* Project object */;
+			containerPortal = 1B2230D7255E11BF00AB7B3E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 778AD25C255E149800ED1DB5;
-			remoteInfo = Spotifast;
+			remoteGlobalIDString = 1B2230DE255E11BF00AB7B3E;
+			remoteInfo = Vibez;
 		};
-		778AD282255E149C00ED1DB5 /* PBXContainerItemProxy */ = {
+		1B223104255E11C400AB7B3E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 778AD255255E149800ED1DB5 /* Project object */;
+			containerPortal = 1B2230D7255E11BF00AB7B3E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 778AD25C255E149800ED1DB5;
-			remoteInfo = Spotifast;
+			remoteGlobalIDString = 1B2230DE255E11BF00AB7B3E;
+			remoteInfo = Vibez;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		778634BC2576AA8200BC1071 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		778634CD2576BD5900BC1071 /* FavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavViewController.swift; sourceTree = "<group>"; };
-		778634D22576BDA400BC1071 /* LogOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutViewController.swift; sourceTree = "<group>"; };
-		778634DB2576C58F00BC1071 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
-		778634E625770D7500BC1071 /* clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clock.png; sourceTree = "<group>"; };
-		77863512257C2F6000BC1071 /* AlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
-		77863517257C30F300BC1071 /* AlbumTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTableViewCell.swift; sourceTree = "<group>"; };
-		7786351C257C4AED00BC1071 /* FavoriteViewControllerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewControllerTableViewCell.swift; sourceTree = "<group>"; };
-		778AD25D255E149800ED1DB5 /* Spotifast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spotifast.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		778AD260255E149800ED1DB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		778AD262255E149800ED1DB5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		778AD264255E149800ED1DB5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		778AD267255E149800ED1DB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		778AD26A255E149800ED1DB5 /* Spotifast.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Spotifast.xcdatamodel; sourceTree = "<group>"; };
-		778AD26C255E149B00ED1DB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		778AD26F255E149B00ED1DB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		778AD271255E149B00ED1DB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		778AD276255E149C00ED1DB5 /* SpotifastTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpotifastTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		778AD27A255E149C00ED1DB5 /* SpotifastTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifastTests.swift; sourceTree = "<group>"; };
-		778AD27C255E149C00ED1DB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		778AD281255E149C00ED1DB5 /* SpotifastUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpotifastUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		778AD285255E149C00ED1DB5 /* SpotifastUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifastUITests.swift; sourceTree = "<group>"; };
-		778AD287255E149C00ED1DB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B194726258051DF003CE4C0 /* NetworkRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequests.swift; sourceTree = "<group>"; };
+		1B19473C2580A41A003CE4C0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		1B1947532580C71C003CE4C0 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		1B194758258186CE003CE4C0 /* ArtistTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistTableCell.swift; sourceTree = "<group>"; };
+		1B19476E2581D789003CE4C0 /* TopArtistSongsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopArtistSongsViewController.swift; sourceTree = "<group>"; };
+		1B194786258254DA003CE4C0 /* FavoriteArtistsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteArtistsViewController.swift; sourceTree = "<group>"; };
+		1B2230DF255E11BF00AB7B3E /* Spotifast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spotifast.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B2230E2255E11BF00AB7B3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1B2230E4255E11BF00AB7B3E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1B2230E9255E11C000AB7B3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1B2230EC255E11C000AB7B3E /* Vibez.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Vibez.xcdatamodel; sourceTree = "<group>"; };
+		1B2230EE255E11C300AB7B3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1B2230F1255E11C300AB7B3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1B2230F3255E11C300AB7B3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B2230F8255E11C400AB7B3E /* SpotifastTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpotifastTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B2230FC255E11C400AB7B3E /* SpotifastTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifastTests.swift; sourceTree = "<group>"; };
+		1B2230FE255E11C400AB7B3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B223103255E11C400AB7B3E /* SpotifastUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpotifastUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B223107255E11C400AB7B3E /* SpotifastUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifastUITests.swift; sourceTree = "<group>"; };
+		1B223109255E11C400AB7B3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B9DDC30257AFD1500D8A948 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1B9DDC3B257B00EB00D8A948 /* SpotifyK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyK.swift; sourceTree = "<group>"; };
+		1B9DDC44257B095400D8A948 /* SpotifastSound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifastSound.swift; sourceTree = "<group>"; };
+		1B9DDC56257C6AF500D8A948 /* JSONModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONModel.swift; sourceTree = "<group>"; };
+		1B9DDC5B257C6C3E00D8A948 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		1B9DDC98257C73F600D8A948 /* VibezPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibezPlayer.swift; sourceTree = "<group>"; };
+		1B9DDCAA257C874300D8A948 /* SpotifyCaseTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyCaseTypes.swift; sourceTree = "<group>"; };
+		1B9DDCAF257CB44800D8A948 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1B9DDCB5257CD30000D8A948 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		1B9DDCF0257DF0F700D8A948 /* Parameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parameters.swift; sourceTree = "<group>"; };
+		773E6D652585A43C001F9093 /* spotifast.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spotifast.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		778AD25A255E149800ED1DB5 /* Frameworks */ = {
+		1B2230DC255E11BF00AB7B3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B9DDC52257B10A100D8A948 /* Kingfisher in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B2230F5255E11C400AB7B3E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		778AD273255E149C00ED1DB5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		778AD27E255E149C00ED1DB5 /* Frameworks */ = {
+		1B223100255E11C400AB7B3E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -94,178 +112,197 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		778634C72576BB6C00BC1071 /* Model */ = {
+		1B2230D6255E11BF00AB7B3E = {
 			isa = PBXGroup;
 			children = (
-				778634BC2576AA8200BC1071 /* Constants.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		778634C82576BB7700BC1071 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				778AD266255E149800ED1DB5 /* Main.storyboard */,
-				778634DA2576C56900BC1071 /* CustomView */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		778634C92576BB7F00BC1071 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				778634CD2576BD5900BC1071 /* FavViewController.swift */,
-				778AD264255E149800ED1DB5 /* ViewController.swift */,
-				77863512257C2F6000BC1071 /* AlbumViewController.swift */,
-				778634D22576BDA400BC1071 /* LogOutViewController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		778634DA2576C56900BC1071 /* CustomView */ = {
-			isa = PBXGroup;
-			children = (
-				778634DB2576C58F00BC1071 /* HomeTableViewCell.swift */,
-				77863517257C30F300BC1071 /* AlbumTableViewCell.swift */,
-				7786351C257C4AED00BC1071 /* FavoriteViewControllerTableViewCell.swift */,
-			);
-			path = CustomView;
-			sourceTree = "<group>";
-		};
-		778AD254255E149800ED1DB5 = {
-			isa = PBXGroup;
-			children = (
-				778AD25F255E149800ED1DB5 /* Spotifast */,
-				778AD279255E149C00ED1DB5 /* SpotifastTests */,
-				778AD284255E149C00ED1DB5 /* SpotifastUITests */,
-				778AD25E255E149800ED1DB5 /* Products */,
+				1B2230E1255E11BF00AB7B3E /* Spotifast */,
+				1B2230FB255E11C400AB7B3E /* SpotifastTests */,
+				1B223106255E11C400AB7B3E /* SpotifastUITests */,
+				1B2230E0255E11BF00AB7B3E /* Products */,
+				773E6D9D2585E783001F9093 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		778AD25E255E149800ED1DB5 /* Products */ = {
+		1B2230E0255E11BF00AB7B3E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				778AD25D255E149800ED1DB5 /* Spotifast.app */,
-				778AD276255E149C00ED1DB5 /* SpotifastTests.xctest */,
-				778AD281255E149C00ED1DB5 /* SpotifastUITests.xctest */,
+				1B2230DF255E11BF00AB7B3E /* Spotifast.app */,
+				1B2230F8255E11C400AB7B3E /* SpotifastTests.xctest */,
+				1B223103255E11C400AB7B3E /* SpotifastUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		778AD25F255E149800ED1DB5 /* Spotifast */ = {
+		1B2230E1255E11BF00AB7B3E /* Spotifast */ = {
 			isa = PBXGroup;
 			children = (
-				778AD260255E149800ED1DB5 /* AppDelegate.swift */,
-				778AD262255E149800ED1DB5 /* SceneDelegate.swift */,
-				778634C72576BB6C00BC1071 /* Model */,
-				778634C82576BB7700BC1071 /* View */,
-				778634C92576BB7F00BC1071 /* Controller */,
-				778AD26C255E149B00ED1DB5 /* Assets.xcassets */,
-				778AD26E255E149B00ED1DB5 /* LaunchScreen.storyboard */,
-				778AD271255E149B00ED1DB5 /* Info.plist */,
-				778AD269255E149800ED1DB5 /* Spotifast.xcdatamodeld */,
+				1B2230E4255E11BF00AB7B3E /* SceneDelegate.swift */,
+				1B2230E2255E11BF00AB7B3E /* AppDelegate.swift */,
+				1B9DDC40257B08DD00D8A948 /* Model */,
+				1B9DDCB4257CD1E600D8A948 /* Controllers */,
+				1B9DDC4C257B0B1800D8A948 /* Network */,
+				773E6D652585A43C001F9093 /* spotifast.png */,
+				1B2230E8255E11C000AB7B3E /* Main.storyboard */,
+				1B2230EE255E11C300AB7B3E /* Assets.xcassets */,
+				1B2230F0255E11C300AB7B3E /* LaunchScreen.storyboard */,
+				1B2230F3255E11C300AB7B3E /* Info.plist */,
+				1B2230EB255E11C000AB7B3E /* Vibez.xcdatamodeld */,
 			);
 			path = Spotifast;
 			sourceTree = "<group>";
 		};
-		778AD279255E149C00ED1DB5 /* SpotifastTests */ = {
+		1B2230FB255E11C400AB7B3E /* SpotifastTests */ = {
 			isa = PBXGroup;
 			children = (
-				778AD27A255E149C00ED1DB5 /* SpotifastTests.swift */,
-				778AD27C255E149C00ED1DB5 /* Info.plist */,
-				778634E625770D7500BC1071 /* clock.png */,
+				1B2230FC255E11C400AB7B3E /* SpotifastTests.swift */,
+				1B2230FE255E11C400AB7B3E /* Info.plist */,
 			);
 			path = SpotifastTests;
 			sourceTree = "<group>";
 		};
-		778AD284255E149C00ED1DB5 /* SpotifastUITests */ = {
+		1B223106255E11C400AB7B3E /* SpotifastUITests */ = {
 			isa = PBXGroup;
 			children = (
-				778AD285255E149C00ED1DB5 /* SpotifastUITests.swift */,
-				778AD287255E149C00ED1DB5 /* Info.plist */,
+				1B223107255E11C400AB7B3E /* SpotifastUITests.swift */,
+				1B223109255E11C400AB7B3E /* Info.plist */,
 			);
 			path = SpotifastUITests;
+			sourceTree = "<group>";
+		};
+		1B9DDC40257B08DD00D8A948 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1B9DDC30257AFD1500D8A948 /* Constants.swift */,
+				1B9DDC44257B095400D8A948 /* SpotifastSound.swift */,
+				1B9DDC5B257C6C3E00D8A948 /* DataModel.swift */,
+				1B9DDCAA257C874300D8A948 /* SpotifyCaseTypes.swift */,
+				1B9DDC3B257B00EB00D8A948 /* SpotifyK.swift */,
+				1B9DDC56257C6AF500D8A948 /* JSONModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1B9DDC4C257B0B1800D8A948 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				1B9DDCF0257DF0F700D8A948 /* Parameters.swift */,
+				1B194726258051DF003CE4C0 /* NetworkRequests.swift */,
+				1B9DDC98257C73F600D8A948 /* VibezPlayer.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		1B9DDC4E257B0B3500D8A948 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1B194758258186CE003CE4C0 /* ArtistTableCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1B9DDCB4257CD1E600D8A948 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1B9DDCAF257CB44800D8A948 /* LoginViewController.swift */,
+				1B19473C2580A41A003CE4C0 /* HomeViewController.swift */,
+				1B194786258254DA003CE4C0 /* FavoriteArtistsViewController.swift */,
+				1B19476E2581D789003CE4C0 /* TopArtistSongsViewController.swift */,
+				1B1947532580C71C003CE4C0 /* FavoritesViewController.swift */,
+				1B9DDCB5257CD30000D8A948 /* TabBarController.swift */,
+				1B9DDC4E257B0B3500D8A948 /* Views */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		773E6D9D2585E783001F9093 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		778AD25C255E149800ED1DB5 /* Spotifast */ = {
+		1B2230DE255E11BF00AB7B3E /* Spotifast */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 778AD28A255E149C00ED1DB5 /* Build configuration list for PBXNativeTarget "Spotifast" */;
+			buildConfigurationList = 1B22310C255E11C400AB7B3E /* Build configuration list for PBXNativeTarget "Spotifast" */;
 			buildPhases = (
-				778AD259255E149800ED1DB5 /* Sources */,
-				778AD25A255E149800ED1DB5 /* Frameworks */,
-				778AD25B255E149800ED1DB5 /* Resources */,
+				1B2230DB255E11BF00AB7B3E /* Sources */,
+				1B2230DC255E11BF00AB7B3E /* Frameworks */,
+				1B2230DD255E11BF00AB7B3E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Spotifast;
-			productName = Spotifast;
-			productReference = 778AD25D255E149800ED1DB5 /* Spotifast.app */;
+			packageProductDependencies = (
+				1B9DDC51257B10A100D8A948 /* Kingfisher */,
+			);
+			productName = Vibez;
+			productReference = 1B2230DF255E11BF00AB7B3E /* Spotifast.app */;
 			productType = "com.apple.product-type.application";
 		};
-		778AD275255E149C00ED1DB5 /* SpotifastTests */ = {
+		1B2230F7255E11C400AB7B3E /* SpotifastTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 778AD28D255E149C00ED1DB5 /* Build configuration list for PBXNativeTarget "SpotifastTests" */;
+			buildConfigurationList = 1B22310F255E11C400AB7B3E /* Build configuration list for PBXNativeTarget "SpotifastTests" */;
 			buildPhases = (
-				778AD272255E149C00ED1DB5 /* Sources */,
-				778AD273255E149C00ED1DB5 /* Frameworks */,
-				778AD274255E149C00ED1DB5 /* Resources */,
+				1B2230F4255E11C400AB7B3E /* Sources */,
+				1B2230F5255E11C400AB7B3E /* Frameworks */,
+				1B2230F6255E11C400AB7B3E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				778AD278255E149C00ED1DB5 /* PBXTargetDependency */,
+				1B2230FA255E11C400AB7B3E /* PBXTargetDependency */,
 			);
 			name = SpotifastTests;
-			productName = SpotifastTests;
-			productReference = 778AD276255E149C00ED1DB5 /* SpotifastTests.xctest */;
+			productName = VibezTests;
+			productReference = 1B2230F8255E11C400AB7B3E /* SpotifastTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		778AD280255E149C00ED1DB5 /* SpotifastUITests */ = {
+		1B223102255E11C400AB7B3E /* SpotifastUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 778AD290255E149C00ED1DB5 /* Build configuration list for PBXNativeTarget "SpotifastUITests" */;
+			buildConfigurationList = 1B223112255E11C400AB7B3E /* Build configuration list for PBXNativeTarget "SpotifastUITests" */;
 			buildPhases = (
-				778AD27D255E149C00ED1DB5 /* Sources */,
-				778AD27E255E149C00ED1DB5 /* Frameworks */,
-				778AD27F255E149C00ED1DB5 /* Resources */,
+				1B2230FF255E11C400AB7B3E /* Sources */,
+				1B223100255E11C400AB7B3E /* Frameworks */,
+				1B223101255E11C400AB7B3E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				778AD283255E149C00ED1DB5 /* PBXTargetDependency */,
+				1B223105255E11C400AB7B3E /* PBXTargetDependency */,
 			);
 			name = SpotifastUITests;
-			productName = SpotifastUITests;
-			productReference = 778AD281255E149C00ED1DB5 /* SpotifastUITests.xctest */;
+			productName = VibezUITests;
+			productReference = 1B223103255E11C400AB7B3E /* SpotifastUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		778AD255255E149800ED1DB5 /* Project object */ = {
+		1B2230D7255E11BF00AB7B3E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1210;
 				LastUpgradeCheck = 1210;
 				TargetAttributes = {
-					778AD25C255E149800ED1DB5 = {
+					1B2230DE255E11BF00AB7B3E = {
 						CreatedOnToolsVersion = 12.1;
 					};
-					778AD275255E149C00ED1DB5 = {
+					1B2230F7255E11C400AB7B3E = {
 						CreatedOnToolsVersion = 12.1;
-						TestTargetID = 778AD25C255E149800ED1DB5;
+						TestTargetID = 1B2230DE255E11BF00AB7B3E;
 					};
-					778AD280255E149C00ED1DB5 = {
+					1B223102255E11C400AB7B3E = {
 						CreatedOnToolsVersion = 12.1;
-						TestTargetID = 778AD25C255E149800ED1DB5;
+						TestTargetID = 1B2230DE255E11BF00AB7B3E;
 					};
 				};
 			};
-			buildConfigurationList = 778AD258255E149800ED1DB5 /* Build configuration list for PBXProject "Spotifast" */;
+			buildConfigurationList = 1B2230DA255E11BF00AB7B3E /* Build configuration list for PBXProject "Spotifast" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -273,38 +310,41 @@
 				en,
 				Base,
 			);
-			mainGroup = 778AD254255E149800ED1DB5;
-			productRefGroup = 778AD25E255E149800ED1DB5 /* Products */;
+			mainGroup = 1B2230D6255E11BF00AB7B3E;
+			packageReferences = (
+				1B9DDC50257B10A000D8A948 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
+			productRefGroup = 1B2230E0255E11BF00AB7B3E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				778AD25C255E149800ED1DB5 /* Spotifast */,
-				778AD275255E149C00ED1DB5 /* SpotifastTests */,
-				778AD280255E149C00ED1DB5 /* SpotifastUITests */,
+				1B2230DE255E11BF00AB7B3E /* Spotifast */,
+				1B2230F7255E11C400AB7B3E /* SpotifastTests */,
+				1B223102255E11C400AB7B3E /* SpotifastUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		778AD25B255E149800ED1DB5 /* Resources */ = {
+		1B2230DD255E11BF00AB7B3E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				778AD270255E149B00ED1DB5 /* LaunchScreen.storyboard in Resources */,
-				778AD26D255E149B00ED1DB5 /* Assets.xcassets in Resources */,
-				778AD268255E149800ED1DB5 /* Main.storyboard in Resources */,
+				1B2230F2255E11C300AB7B3E /* LaunchScreen.storyboard in Resources */,
+				773E6D662585A43C001F9093 /* spotifast.png in Resources */,
+				1B2230EF255E11C300AB7B3E /* Assets.xcassets in Resources */,
+				1B2230EA255E11C000AB7B3E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		778AD274255E149C00ED1DB5 /* Resources */ = {
+		1B2230F6255E11C400AB7B3E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				778634E725770D7500BC1071 /* clock.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		778AD27F255E149C00ED1DB5 /* Resources */ = {
+		1B223101255E11C400AB7B3E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -314,68 +354,76 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		778AD259255E149800ED1DB5 /* Sources */ = {
+		1B2230DB255E11BF00AB7B3E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				778634CE2576BD5900BC1071 /* FavViewController.swift in Sources */,
-				7786351D257C4AED00BC1071 /* FavoriteViewControllerTableViewCell.swift in Sources */,
-				778634BD2576AA8200BC1071 /* Constants.swift in Sources */,
-				778AD265255E149800ED1DB5 /* ViewController.swift in Sources */,
-				77863513257C2F6000BC1071 /* AlbumViewController.swift in Sources */,
-				778AD261255E149800ED1DB5 /* AppDelegate.swift in Sources */,
-				77863518257C30F300BC1071 /* AlbumTableViewCell.swift in Sources */,
-				778AD263255E149800ED1DB5 /* SceneDelegate.swift in Sources */,
-				778AD26B255E149800ED1DB5 /* Spotifast.xcdatamodeld in Sources */,
-				778634DC2576C58F00BC1071 /* HomeTableViewCell.swift in Sources */,
-				778634D32576BDA400BC1071 /* LogOutViewController.swift in Sources */,
+				1B9DDC31257AFD1600D8A948 /* Constants.swift in Sources */,
+				1B19476F2581D789003CE4C0 /* TopArtistSongsViewController.swift in Sources */,
+				1B9DDCB6257CD30000D8A948 /* TabBarController.swift in Sources */,
+				1B9DDCF1257DF0F700D8A948 /* Parameters.swift in Sources */,
+				1B19473D2580A41A003CE4C0 /* HomeViewController.swift in Sources */,
+				1B194759258186CF003CE4C0 /* ArtistTableCell.swift in Sources */,
+				1B194787258254DA003CE4C0 /* FavoriteArtistsViewController.swift in Sources */,
+				1B9DDC3C257B00EB00D8A948 /* SpotifyK.swift in Sources */,
+				1B2230E3255E11BF00AB7B3E /* AppDelegate.swift in Sources */,
+				1B2230ED255E11C000AB7B3E /* Vibez.xcdatamodeld in Sources */,
+				1B1947542580C71C003CE4C0 /* FavoritesViewController.swift in Sources */,
+				1B9DDC57257C6AF600D8A948 /* JSONModel.swift in Sources */,
+				1B9DDC45257B095400D8A948 /* SpotifastSound.swift in Sources */,
+				1B9DDCAB257C874300D8A948 /* SpotifyCaseTypes.swift in Sources */,
+				1B9DDC99257C73F600D8A948 /* VibezPlayer.swift in Sources */,
+				1B194727258051DF003CE4C0 /* NetworkRequests.swift in Sources */,
+				1B2230E5255E11BF00AB7B3E /* SceneDelegate.swift in Sources */,
+				1B9DDCB0257CB44900D8A948 /* LoginViewController.swift in Sources */,
+				1B9DDC5C257C6C3E00D8A948 /* DataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		778AD272255E149C00ED1DB5 /* Sources */ = {
+		1B2230F4255E11C400AB7B3E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				778AD27B255E149C00ED1DB5 /* SpotifastTests.swift in Sources */,
+				1B2230FD255E11C400AB7B3E /* SpotifastTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		778AD27D255E149C00ED1DB5 /* Sources */ = {
+		1B2230FF255E11C400AB7B3E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				778AD286255E149C00ED1DB5 /* SpotifastUITests.swift in Sources */,
+				1B223108255E11C400AB7B3E /* SpotifastUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		778AD278255E149C00ED1DB5 /* PBXTargetDependency */ = {
+		1B2230FA255E11C400AB7B3E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 778AD25C255E149800ED1DB5 /* Spotifast */;
-			targetProxy = 778AD277255E149C00ED1DB5 /* PBXContainerItemProxy */;
+			target = 1B2230DE255E11BF00AB7B3E /* Spotifast */;
+			targetProxy = 1B2230F9255E11C400AB7B3E /* PBXContainerItemProxy */;
 		};
-		778AD283255E149C00ED1DB5 /* PBXTargetDependency */ = {
+		1B223105255E11C400AB7B3E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 778AD25C255E149800ED1DB5 /* Spotifast */;
-			targetProxy = 778AD282255E149C00ED1DB5 /* PBXContainerItemProxy */;
+			target = 1B2230DE255E11BF00AB7B3E /* Spotifast */;
+			targetProxy = 1B223104255E11C400AB7B3E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		778AD266255E149800ED1DB5 /* Main.storyboard */ = {
+		1B2230E8255E11C000AB7B3E /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				778AD267255E149800ED1DB5 /* Base */,
+				1B2230E9255E11C000AB7B3E /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		778AD26E255E149B00ED1DB5 /* LaunchScreen.storyboard */ = {
+		1B2230F0255E11C300AB7B3E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				778AD26F255E149B00ED1DB5 /* Base */,
+				1B2230F1255E11C300AB7B3E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -383,7 +431,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		778AD288255E149C00ED1DB5 /* Debug */ = {
+		1B22310A255E11C400AB7B3E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -444,7 +492,7 @@
 			};
 			name = Debug;
 		};
-		778AD289255E149C00ED1DB5 /* Release */ = {
+		1B22310B255E11C400AB7B3E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -499,13 +547,13 @@
 			};
 			name = Release;
 		};
-		778AD28B255E149C00ED1DB5 /* Debug */ = {
+		1B22310D255E11C400AB7B3E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6AY5G84ET7;
+				DEVELOPMENT_TEAM = 4KT624V79W;
 				INFOPLIST_FILE = Spotifast/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -518,13 +566,13 @@
 			};
 			name = Debug;
 		};
-		778AD28C255E149C00ED1DB5 /* Release */ = {
+		1B22310E255E11C400AB7B3E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6AY5G84ET7;
+				DEVELOPMENT_TEAM = 4KT624V79W;
 				INFOPLIST_FILE = Spotifast/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -537,21 +585,21 @@
 			};
 			name = Release;
 		};
-		778AD28E255E149C00ED1DB5 /* Debug */ = {
+		1B223110255E11C400AB7B3E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6AY5G84ET7;
-				INFOPLIST_FILE = SpotifastTests/Info.plist;
+				DEVELOPMENT_TEAM = 4KT624V79W;
+				INFOPLIST_FILE = VibezTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.modrame.herokuapp.SpotifastTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.benjamin5311.VibezTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -559,21 +607,21 @@
 			};
 			name = Debug;
 		};
-		778AD28F255E149C00ED1DB5 /* Release */ = {
+		1B223111255E11C400AB7B3E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6AY5G84ET7;
-				INFOPLIST_FILE = SpotifastTests/Info.plist;
+				DEVELOPMENT_TEAM = 4KT624V79W;
+				INFOPLIST_FILE = VibezTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.modrame.herokuapp.SpotifastTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.benjamin5311.VibezTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -581,99 +629,118 @@
 			};
 			name = Release;
 		};
-		778AD291255E149C00ED1DB5 /* Debug */ = {
+		1B223113255E11C400AB7B3E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6AY5G84ET7;
-				INFOPLIST_FILE = SpotifastUITests/Info.plist;
+				DEVELOPMENT_TEAM = 4KT624V79W;
+				INFOPLIST_FILE = VibezUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.modrame.herokuapp.SpotifastUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.benjamin5311.VibezUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Spotifast;
+				TEST_TARGET_NAME = Vibez;
 			};
 			name = Debug;
 		};
-		778AD292255E149C00ED1DB5 /* Release */ = {
+		1B223114255E11C400AB7B3E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6AY5G84ET7;
-				INFOPLIST_FILE = SpotifastUITests/Info.plist;
+				DEVELOPMENT_TEAM = 4KT624V79W;
+				INFOPLIST_FILE = VibezUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.modrame.herokuapp.SpotifastUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.benjamin5311.VibezUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Spotifast;
+				TEST_TARGET_NAME = Vibez;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		778AD258255E149800ED1DB5 /* Build configuration list for PBXProject "Spotifast" */ = {
+		1B2230DA255E11BF00AB7B3E /* Build configuration list for PBXProject "Spotifast" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				778AD288255E149C00ED1DB5 /* Debug */,
-				778AD289255E149C00ED1DB5 /* Release */,
+				1B22310A255E11C400AB7B3E /* Debug */,
+				1B22310B255E11C400AB7B3E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		778AD28A255E149C00ED1DB5 /* Build configuration list for PBXNativeTarget "Spotifast" */ = {
+		1B22310C255E11C400AB7B3E /* Build configuration list for PBXNativeTarget "Spotifast" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				778AD28B255E149C00ED1DB5 /* Debug */,
-				778AD28C255E149C00ED1DB5 /* Release */,
+				1B22310D255E11C400AB7B3E /* Debug */,
+				1B22310E255E11C400AB7B3E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		778AD28D255E149C00ED1DB5 /* Build configuration list for PBXNativeTarget "SpotifastTests" */ = {
+		1B22310F255E11C400AB7B3E /* Build configuration list for PBXNativeTarget "SpotifastTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				778AD28E255E149C00ED1DB5 /* Debug */,
-				778AD28F255E149C00ED1DB5 /* Release */,
+				1B223110255E11C400AB7B3E /* Debug */,
+				1B223111255E11C400AB7B3E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		778AD290255E149C00ED1DB5 /* Build configuration list for PBXNativeTarget "SpotifastUITests" */ = {
+		1B223112255E11C400AB7B3E /* Build configuration list for PBXNativeTarget "SpotifastUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				778AD291255E149C00ED1DB5 /* Debug */,
-				778AD292255E149C00ED1DB5 /* Release */,
+				1B223113255E11C400AB7B3E /* Debug */,
+				1B223114255E11C400AB7B3E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		1B9DDC50257B10A000D8A948 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.15.8;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1B9DDC51257B10A100D8A948 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1B9DDC50257B10A000D8A948 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
+
 /* Begin XCVersionGroup section */
-		778AD269255E149800ED1DB5 /* Spotifast.xcdatamodeld */ = {
+		1B2230EB255E11C000AB7B3E /* Vibez.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				778AD26A255E149800ED1DB5 /* Spotifast.xcdatamodel */,
+				1B2230EC255E11C000AB7B3E /* Vibez.xcdatamodel */,
 			);
-			currentVersion = 778AD26A255E149800ED1DB5 /* Spotifast.xcdatamodel */;
-			path = Spotifast.xcdatamodeld;
+			currentVersion = 1B2230EC255E11C000AB7B3E /* Vibez.xcdatamodel */;
+			path = Vibez.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
 	};
-	rootObject = 778AD255255E149800ED1DB5 /* Project object */;
+	rootObject = 1B2230D7255E11BF00AB7B3E /* Project object */;
 }
