@@ -1,9 +1,7 @@
 //
 //  Parameters.swift
-//  Vibez
-//
-//  Created by Benjamin Simpson on 12/6/20.
-//
+//  Spotifast
+//  Created by Mohammed Drame on 12/12/20.
 
 import Foundation
 

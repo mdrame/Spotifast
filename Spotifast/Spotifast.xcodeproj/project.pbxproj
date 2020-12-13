@@ -16,7 +16,7 @@
 		1B2230E3255E11BF00AB7B3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2230E2255E11BF00AB7B3E /* AppDelegate.swift */; };
 		1B2230E5255E11BF00AB7B3E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2230E4255E11BF00AB7B3E /* SceneDelegate.swift */; };
 		1B2230EA255E11C000AB7B3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B2230E8255E11C000AB7B3E /* Main.storyboard */; };
-		1B2230ED255E11C000AB7B3E /* Vibez.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1B2230EB255E11C000AB7B3E /* Vibez.xcdatamodeld */; };
+		1B2230ED255E11C000AB7B3E /* Spotifast.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1B2230EB255E11C000AB7B3E /* Spotifast.xcdatamodeld */; };
 		1B2230EF255E11C300AB7B3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B2230EE255E11C300AB7B3E /* Assets.xcassets */; };
 		1B2230F2255E11C300AB7B3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B2230F0255E11C300AB7B3E /* LaunchScreen.storyboard */; };
 		1B2230FD255E11C400AB7B3E /* SpotifastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2230FC255E11C400AB7B3E /* SpotifastTests.swift */; };
@@ -146,7 +146,7 @@
 				1B2230EE255E11C300AB7B3E /* Assets.xcassets */,
 				1B2230F0255E11C300AB7B3E /* LaunchScreen.storyboard */,
 				1B2230F3255E11C300AB7B3E /* Info.plist */,
-				1B2230EB255E11C000AB7B3E /* Vibez.xcdatamodeld */,
+				1B2230EB255E11C000AB7B3E /* Spotifast.xcdatamodeld */,
 			);
 			path = Spotifast;
 			sourceTree = "<group>";
@@ -367,7 +367,7 @@
 				1B194787258254DA003CE4C0 /* FavoriteArtistsViewController.swift in Sources */,
 				1B9DDC3C257B00EB00D8A948 /* SpotifyK.swift in Sources */,
 				1B2230E3255E11BF00AB7B3E /* AppDelegate.swift in Sources */,
-				1B2230ED255E11C000AB7B3E /* Vibez.xcdatamodeld in Sources */,
+				1B2230ED255E11C000AB7B3E /* Spotifast.xcdatamodeld in Sources */,
 				1B1947542580C71C003CE4C0 /* FavoritesViewController.swift in Sources */,
 				1B9DDC57257C6AF600D8A948 /* JSONModel.swift in Sources */,
 				1B9DDC45257B095400D8A948 /* SpotifastSound.swift in Sources */,
@@ -730,13 +730,13 @@
 /* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
-		1B2230EB255E11C000AB7B3E /* Vibez.xcdatamodeld */ = {
+		1B2230EB255E11C000AB7B3E /* Spotifast.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				1B2230EC255E11C000AB7B3E /* Vibez.xcdatamodel */,
 			);
 			currentVersion = 1B2230EC255E11C000AB7B3E /* Vibez.xcdatamodel */;
-			path = Vibez.xcdatamodeld;
+			path = Spotifast.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
